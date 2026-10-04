@@ -18,6 +18,10 @@ and their limits. Report what you actually measured and label estimates separate
 - [2026-10-03: 2x AMD Instinct MI50 16 GB (gfx906), Xeon E5-2666 v3, 32 GB RAM](../bench/results/2026-10-03-community-2x-mi50/README.md):
   the gfx906 build (#638) with #639 and #640, Coder IQ1_M, 131,072-token context, layer split across both cards;
   three runs each at 4,096, 32,768, and 128,000 prompt tokens, plus six recall checks.
+- [2026-10-04: RTX 4080 SUPER (32 GB), Core i7-13790F (8P+16E), 96 GB RAM](../bench/results/2026-10-04-community-rtx-4080s-iq3s/README.md):
+  Strata 0.1.39, Flash-Next IQ3_S on Windows, 524,288-token context; expert-pool worker count (4 against the
+  engine's 15), `STRATA_PF_FUSED=1` cold prefill on IQ3_S, and the cost of the 524,288 and 1,048,576 context
+  tiers at a fixed 43,969-token prompt.
 
 ## What to record
 
